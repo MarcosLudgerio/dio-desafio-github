@@ -5,9 +5,11 @@ namespace ExamplePOO.Models
         public string Name { get; set; }
         public int Age { get; set; }
 
-        public void Show()
+        public string Document { get; set; }
+
+        public virtual void Show()
         {
-            Console.WriteLine($"Olá, meu nome é {Name} e tenho {Age} anos.");
+            Console.WriteLine($"Olá, meu nome é {this.Name} e tenho {this.Age} anos. Meu Documento é {this.Document}");
         }
     }
 }

@@ -1,0 +1,15 @@
+C:\Users\marco\Documents\www\dotnet-study\dio-desafio-github\ExamplePOO\bin\Debug\net6.0\ExamplePOO.exe
+C:\Users\marco\Documents\www\dotnet-study\dio-desafio-github\ExamplePOO\bin\Debug\net6.0\ExamplePOO.deps.json
+C:\Users\marco\Documents\www\dotnet-study\dio-desafio-github\ExamplePOO\bin\Debug\net6.0\ExamplePOO.runtimeconfig.json
+C:\Users\marco\Documents\www\dotnet-study\dio-desafio-github\ExamplePOO\bin\Debug\net6.0\ExamplePOO.dll
+C:\Users\marco\Documents\www\dotnet-study\dio-desafio-github\ExamplePOO\bin\Debug\net6.0\ref\ExamplePOO.dll
+C:\Users\marco\Documents\www\dotnet-study\dio-desafio-github\ExamplePOO\bin\Debug\net6.0\ExamplePOO.pdb
+C:\Users\marco\Documents\www\dotnet-study\dio-desafio-github\ExamplePOO\obj\Debug\net6.0\ExamplePOO.csproj.AssemblyReference.cache
+C:\Users\marco\Documents\www\dotnet-study\dio-desafio-github\ExamplePOO\obj\Debug\net6.0\ExamplePOO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\Documents\www\dotnet-study\dio-desafio-github\ExamplePOO\obj\Debug\net6.0\ExamplePOO.AssemblyInfoInputs.cache
+C:\Users\marco\Documents\www\dotnet-study\dio-desafio-github\ExamplePOO\obj\Debug\net6.0\ExamplePOO.AssemblyInfo.cs
+C:\Users\marco\Documents\www\dotnet-study\dio-desafio-github\ExamplePOO\obj\Debug\net6.0\ExamplePOO.csproj.CoreCompileInputs.cache
+C:\Users\marco\Documents\www\dotnet-study\dio-desafio-github\ExamplePOO\obj\Debug\net6.0\ExamplePOO.dll
+C:\Users\marco\Documents\www\dotnet-study\dio-desafio-github\ExamplePOO\obj\Debug\net6.0\ref\ExamplePOO.dll
+C:\Users\marco\Documents\www\dotnet-study\dio-desafio-github\ExamplePOO\obj\Debug\net6.0\ExamplePOO.pdb
+C:\Users\marco\Documents\www\dotnet-study\dio-desafio-github\ExamplePOO\obj\Debug\net6.0\ExamplePOO.genruntimeconfig.cache

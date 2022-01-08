@@ -1,10 +1,16 @@
 ﻿using ExamplePOO.Models;
 
 
+Corrente c = new Corrente();
+c.Creditar(100);
 
-Calculadora c = new Calculadora();
-System.Console.WriteLine("Resultado da soma: " + c.sum(4, 5));
-System.Console.WriteLine("Resultado da soma: " + c.sum(4, 5, 6));
+c.ExibirSaldo();
+
+
+
+// Calculadora c = new Calculadora();
+// System.Console.WriteLine("Resultado da soma: " + c.sum(4, 5));
+// System.Console.WriteLine("Resultado da soma: " + c.sum(4, 5, 6));
 
 // Aluno p1 = new Aluno();
 // p1.Name = "Marcos";

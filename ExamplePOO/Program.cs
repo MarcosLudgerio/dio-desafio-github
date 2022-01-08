@@ -1,18 +1,18 @@
 ﻿using ExamplePOO.Models;
 
 
-Corrente c = new Corrente();
-c.Creditar(100);
+// CheckingAccount c = new CheckingAccount();
+// c.Credit(100);
 
-c.ExibirSaldo();
+// c.ShowSale();
 
 
 
-// Calculadora c = new Calculadora();
-// System.Console.WriteLine("Resultado da soma: " + c.sum(4, 5));
-// System.Console.WriteLine("Resultado da soma: " + c.sum(4, 5, 6));
+// Calculator c = new Calculator();
+// System.Console.WriteLine("Resultado da soma: " + c.Sum(4, 5));
+// System.Console.WriteLine("Resultado da soma: " + c.Sum(4, 5, 6));
 
-// Aluno p1 = new Aluno();
+// Student p1 = new Student();
 // p1.Name = "Marcos";
 // p1.Age = 12;
 // p1.Note = 10;
@@ -27,16 +27,16 @@ c.ExibirSaldo();
 
 
 
-// Retangulo r = new Retangulo();
+// Rectangle r = new Rectangle();
 // r.SetMeasures(10, 15);
 // System.Console.WriteLine(r.CalcArea());
 
-// Retangulo r2 = new Retangulo();
+// Rectangle r2 = new Rectangle();
 // r2.SetMeasures(10, 0);
 // System.Console.WriteLine(r2.CalcArea());
 
 
-// Pessoa p1 = new Pessoa();
+// Person p1 = new Person();
 // p1.Name = "Marcos";
 // p1.Age = 12;
 

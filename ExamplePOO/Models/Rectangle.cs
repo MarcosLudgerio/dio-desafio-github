@@ -1,10 +1,9 @@
 namespace ExamplePOO.Models
 {
-    public class Retangulo
+    public class Rectangle
     {
         private double Height;
         private double Width;
-
         private Boolean Validate;
 
 

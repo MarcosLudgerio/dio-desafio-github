@@ -1,6 +1,6 @@
 namespace ExamplePOO.Models
 {
-    public sealed class Diretor : Professor
+    public sealed class Principal : Professor
     {
         public override void Show()
         {

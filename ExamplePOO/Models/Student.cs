@@ -1,6 +1,6 @@
 namespace ExamplePOO.Models
 {
-    public class Aluno : Pessoa
+    public class Student : Person
     {
         public double Note { get; set; }
 

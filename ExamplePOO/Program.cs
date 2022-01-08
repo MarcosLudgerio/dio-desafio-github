@@ -1,4 +1,10 @@
-﻿using ExamplePOO.Models;
+﻿using ExamplePOO.interfaces;
+using ExamplePOO.Models;
+
+
+iCalculator calc = new Calculator();
+
+System.Console.WriteLine(calc.Subtract(10, 4));
 
 
 // CheckingAccount c = new CheckingAccount();

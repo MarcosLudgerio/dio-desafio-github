@@ -1,10 +1,42 @@
-﻿using ExamplePOO.interfaces;
+﻿using ExamplePOO.Helper;
+using ExamplePOO.interfaces;
 using ExamplePOO.Models;
 
 
-iCalculator calc = new Calculator();
+FileHelper fh = new FileHelper();
 
-System.Console.WriteLine(calc.Subtract(10, 4));
+string path = "C:\\Users\\marco\\Documents\\www\\dotnet-study\\dio-desafio-github\\ExamplePOO\\FolderTest";
+string pathFile = Path.Combine(path, "Folder3", "file-test-steam");
+string pathFile2 = Path.Combine(path, "Folder3", "file-test");
+var listString = new List<string> { "Line 1", "Line2", "Line 3" };
+var listStringAppend = new List<string> { "Line 4", "Line 5", "Line 6" };
+
+
+// fh.ListDirectories("C:\\Users\\marco\\Documents\\www\\dotnet-study\\dio-desafio-github\\ExamplePOO\\FolderTest");
+
+// fh.ListFilesInFolder(path);
+// 
+// fh.CreateDirectory(Path.Combine(path, "Folder3", "subFolder3"));
+
+// fh.deleteDirectory(Path.Combine(path, "Folder1"), true);
+
+// fh.CreateTxtFile(pathFile, "Writing file txt");
+
+// fh.CreateTxtFileStream(pathFile, listString);
+
+// fh.AddTextInFileStream(pathFile, listStringAppend);
+
+// fh.ReadFileSteam(pathFile);
+
+// fh.MoveFile(pathFile, pathFile2, true);
+
+// fh.CopyFile(pathFile, pathFile2, false);
+
+fh.DeleteFile(pathFile2);
+
+// iCalculator calc = new Calculator();
+
+// System.Console.WriteLine(calc.Subtract(10, 4));
 
 
 // CheckingAccount c = new CheckingAccount();

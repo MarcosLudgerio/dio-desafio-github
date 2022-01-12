@@ -33,6 +33,11 @@ namespace Collections.Helper
         {
             Array.Copy(list, listTarget, list.Length);
         }
+
+        public bool isPresents(int[] list, int value)
+        {
+            return Array.Exists(list, element => element == value);
+        }
     }
 
 

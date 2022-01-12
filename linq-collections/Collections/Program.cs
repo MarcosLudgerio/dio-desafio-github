@@ -56,9 +56,13 @@ namespace Collections
             // op.ordenationBublleSort(list);
             // op.Ordenation(list);
 
-            op.showArray(listCopy);
-            op.Copy(list, listCopy);
-            op.showArray(listCopy);
+            // op.showArray(listCopy);
+            // op.Copy(list, listCopy);
+
+            op.showArray(list);
+            System.Console.WriteLine(op.isPresents(list, 7));
+
+
 
         }
     }

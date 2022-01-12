@@ -59,6 +59,11 @@ namespace Collections.Helper
             Array.Resize(ref list, newLength);
         }
 
+        public void ConvertToString(int[] list)
+        {
+            Array.ConvertAll(list, element => element.ToString());
+        }
+
     }
 
 

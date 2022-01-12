@@ -62,8 +62,11 @@ namespace Collections
             // System.Console.WriteLine(op.IsPresents(list, 7));
 
 
+            // op.ShowArray(list);
+            // System.Console.WriteLine(op.BiggerThen(list, 1));
+
             op.ShowArray(list);
-            System.Console.WriteLine(op.BiggerThen(list, 1));
+            System.Console.WriteLine(op.GetVaue(list, 5));
         }
     }
 }

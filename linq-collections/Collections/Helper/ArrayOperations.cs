@@ -43,6 +43,11 @@ namespace Collections.Helper
         {
             return Array.TrueForAll(list, element => element > value);
         }
+
+        public int GetVaue(int[] list, int value)
+        {
+            return Array.Find(list, element => element == value);
+        }
     }
 
 

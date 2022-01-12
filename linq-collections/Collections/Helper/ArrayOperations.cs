@@ -2,13 +2,13 @@ namespace Collections.Helper
 {
     public class ArrayOperations
     {
-        public void showArray(int[] list)
+        public void ShowArray(int[] list)
         {
             string linha = string.Join(", ", list);
             System.Console.WriteLine("[" + linha + "]");
         }
 
-        public void ordenationBublleSort(int[] list)
+        public void OrdenationBublleSort(int[] list)
         {
             int tmp = 0;
             for (int i = 0; i < list.Length; i++)
@@ -34,9 +34,14 @@ namespace Collections.Helper
             Array.Copy(list, listTarget, list.Length);
         }
 
-        public bool isPresents(int[] list, int value)
+        public bool IsPresents(int[] list, int value)
         {
             return Array.Exists(list, element => element == value);
+        }
+
+        public bool BiggerThen(int[] list, int value)
+        {
+            return Array.TrueForAll(list, element => element > value);
         }
     }
 

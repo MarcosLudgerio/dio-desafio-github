@@ -48,7 +48,7 @@ namespace Collections
             // Insert Random values in list
             for (int i = 0; i < list.Length; i++)
             {
-                list[i] = random.Next(0, 10);
+                list[i] = random.Next(1, 10);
             }
 
             // Ordenation Alghoritim
@@ -59,11 +59,11 @@ namespace Collections
             // op.showArray(listCopy);
             // op.Copy(list, listCopy);
 
-            op.showArray(list);
-            System.Console.WriteLine(op.isPresents(list, 7));
+            // System.Console.WriteLine(op.IsPresents(list, 7));
 
 
-
+            op.ShowArray(list);
+            System.Console.WriteLine(op.BiggerThen(list, 1));
         }
     }
 }

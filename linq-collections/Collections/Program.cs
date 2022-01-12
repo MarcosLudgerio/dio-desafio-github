@@ -1,35 +1,62 @@
-﻿// int[] arrayInt = new int[3];
+﻿using Collections.Helper;
 
-// arrayInt[0] = 6;
-// arrayInt[1] = 7;
-// arrayInt[2] = 5;
-
-// System.Console.WriteLine("Varrendo array pelo for");
-// for (int i = 0; i < arrayInt.Length; i++)
-// {
-//     System.Console.WriteLine(arrayInt[i]);
-// }
-
-// System.Console.WriteLine("Varrendo array com foreach");
-// foreach (var item in arrayInt)
-// {
-//     System.Console.WriteLine(item);
-// }
-
-int[,] matrix = new int[4, 4];
-Random random = new Random();
-for (int i = 0; i < matrix.GetLength(0); i++)
+namespace Collections
 {
-    for (int j = 0; j < matrix.GetLength(1); j++)
+    public class Principal
     {
-        matrix[i, j] = random.Next(0, 100);
-    }
-}
+        public static void Main(string[] args)
+        {
+            // int[] arrayInt = new int[3];
 
-for (int i = 0; i < matrix.GetLength(0); i++)
-{
-    for (int j = 0; j < matrix.GetLength(1); j++)
-    {
-        System.Console.WriteLine(matrix[i, j]);
+            // arrayInt[0] = 6;
+            // arrayInt[1] = 7;
+            // arrayInt[2] = 5;
+
+            // System.Console.WriteLine("Varrendo array pelo for");
+            // for (int i = 0; i < arrayInt.Length; i++)
+            // {
+            //     System.Console.WriteLine(arrayInt[i]);
+            // }
+
+            // System.Console.WriteLine("Varrendo array com foreach");
+            // foreach (var item in arrayInt)
+            // {
+            //     System.Console.WriteLine(item);
+            // }
+
+            // int[,] matrix = new int[4, 4];
+
+            // //
+            // for (int i = 0; i < matrix.GetLength(0); i++)
+            // {
+            //     for (int j = 0; j < matrix.GetLength(1); j++)
+            //     {
+            //         matrix[i, j] = random.Next(0, 100);
+            //     }
+            // }
+
+            // for (int i = 0; i < matrix.GetLength(0); i++)
+            // {
+            //     for (int j = 0; j < matrix.GetLength(1); j++)
+            //     {
+            //         System.Console.WriteLine(matrix[i, j]);
+            //     }
+            // }
+            Random random = new Random();
+            int[] list = new int[5];
+
+            // Insert Random values in list
+            for (int i = 0; i < list.Length; i++)
+            {
+                list[i] = random.Next(0, 10);
+            }
+
+            // Ordenation Alghoritim
+
+            ArrayOperations op = new ArrayOperations();
+            op.showArray(list);
+            op.ordenationBublleSort(list);
+            op.showArray(list);
+        }
     }
 }

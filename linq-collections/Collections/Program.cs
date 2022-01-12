@@ -6,6 +6,8 @@ namespace Collections
     {
         public static void Main(string[] args)
         {
+
+
             // int[] arrayInt = new int[3];
 
             // arrayInt[0] = 6;
@@ -42,17 +44,17 @@ namespace Collections
             //         System.Console.WriteLine(matrix[i, j]);
             //     }
             // }
-            Random random = new Random();
-            int[] list = new int[5];
-            int[] listCopy = new int[10];
-            // Insert Random values in list
-            for (int i = 0; i < list.Length; i++)
-            {
-                list[i] = random.Next(1, 10);
-            }
+            // Random random = new Random();
+            // int[] list = new int[5];
+            // int[] listCopy = new int[10];
+            // // Insert Random values in list
+            // for (int i = 0; i < list.Length; i++)
+            // {
+            //     list[i] = random.Next(1, 10);
+            // }
 
-            // Ordenation Alghoritim
-            ArrayOperations op = new ArrayOperations();
+            // // Ordenation Alghoritim
+            // ArrayOperations op = new ArrayOperations();
             // op.ordenationBublleSort(list);
             // op.Ordenation(list);
 
@@ -75,9 +77,9 @@ namespace Collections
             // op.Resize(ref list, list.Length * 2);
             // System.Console.WriteLine(list.Length);
 
-            op.ShowArray(list);
-            op.ConvertToString(list);
-            op.ShowArray(list);
+            // op.ShowArray(list);
+            // op.ConvertToString(list);
+            // op.ShowArray(list);
 
         }
     }

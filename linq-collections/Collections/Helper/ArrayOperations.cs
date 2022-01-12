@@ -4,12 +4,8 @@ namespace Collections.Helper
     {
         public void showArray(int[] list)
         {
-            System.Console.Write("[");
-            for (int i = 0; i < list.Length - 1; i++)
-            {
-                System.Console.Write(list[i] + ", ");
-            }
-            System.Console.WriteLine(list[list.Length - 1] + "]");
+            string linha = string.Join(", ", list);
+            System.Console.WriteLine("[" + linha + "]");
         }
 
         public void ordenationBublleSort(int[] list)

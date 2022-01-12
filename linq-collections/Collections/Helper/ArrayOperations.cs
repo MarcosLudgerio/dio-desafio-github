@@ -48,6 +48,17 @@ namespace Collections.Helper
         {
             return Array.Find(list, element => element == value);
         }
+
+        public int GetIndexValue(int[] list, int value)
+        {
+            return Array.IndexOf(list, value);
+        }
+
+        public void Resize(ref int[] list, int newLength)
+        {
+            Array.Resize(ref list, newLength);
+        }
+
     }
 
 

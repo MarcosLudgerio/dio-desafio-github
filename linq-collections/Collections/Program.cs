@@ -44,7 +44,7 @@ namespace Collections
             // }
             Random random = new Random();
             int[] list = new int[5];
-
+            int[] listCopy = new int[10];
             // Insert Random values in list
             for (int i = 0; i < list.Length; i++)
             {
@@ -52,11 +52,14 @@ namespace Collections
             }
 
             // Ordenation Alghoritim
-
             ArrayOperations op = new ArrayOperations();
-            op.showArray(list);
-            op.ordenationBublleSort(list);
-            op.showArray(list);
+            // op.ordenationBublleSort(list);
+            // op.Ordenation(list);
+
+            op.showArray(listCopy);
+            op.Copy(list, listCopy);
+            op.showArray(listCopy);
+
         }
     }
 }

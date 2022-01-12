@@ -25,6 +25,14 @@ namespace Collections.Helper
             }
         }
 
+        public void Ordenation(int[] list)
+        {
+            Array.Sort(list);
+        }
+        public void Copy(int[] list, int[] listTarget)
+        {
+            Array.Copy(list, listTarget, list.Length);
+        }
     }
 
 

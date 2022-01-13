@@ -2,6 +2,8 @@ namespace Collections.Helper
 {
     public class ListOperations
     {
+
+
         public void ShowItemsList(List<string> list)
         {
             for (int i = 0; i < list.Count; i++)
@@ -9,6 +11,8 @@ namespace Collections.Helper
                 System.Console.WriteLine(list[i]);
             }
         }
+
+
 
         public void AddElement(List<string> list, string element)
         {

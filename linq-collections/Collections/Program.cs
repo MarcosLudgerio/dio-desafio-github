@@ -6,8 +6,10 @@ namespace Collections
     {
         public static void Main(string[] args)
         {
-            int[] numbers = new int[5] { 1, 4, 5, 3, 7 };
+            ArrayOperations op = new ArrayOperations();
 
+            int[] numbers = op.GeneratedArrayLength10Random();
+            op.ShowArray(numbers);
             var numbersPars = from num in numbers where num % 2 != 0 orderby num select num;
 
             var numbersParsMethodds = numbers.Where(x => x % 2 != 0).OrderBy(x => x).ToList();

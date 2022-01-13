@@ -2,12 +2,25 @@ namespace Collections.Helper
 {
     public class ArrayOperations
     {
+        Random random = new Random();
         public void ShowArray(int[] list)
         {
             string linha = string.Join(", ", list);
             System.Console.WriteLine("[" + linha + "]");
         }
 
+        public int[] GeneratedArrayLength10Random()
+        {
+            int[] array = new int[10];
+            // Insert Random values in list
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = random.Next(1, 10);
+            }
+
+            return array;
+
+        }
         public void OrdenationBublleSort(int[] list)
         {
             int tmp = 0;

@@ -7,20 +7,35 @@ namespace Collections
         public static void Main(string[] args)
         {
 
-            Queue<string> queue = new Queue<string>();
 
-            queue.Enqueue("Frank");
-            queue.Enqueue("Dayse");
-            queue.Enqueue("Dyen");
+            Stack<string> books = new Stack<string>();
 
+            books.Push(".NET");
+            books.Push("Java");
+            books.Push("Python");
 
-            System.Console.WriteLine($"Há {queue.Count} Pessoas na fila");
-            while (queue.Count > 0)
+            System.Console.WriteLine($"Existem {books.Count} livros na pilha");
+            while (books.Count > 0)
             {
-                System.Console.WriteLine("Vez de " + queue.Peek());
-                queue.Dequeue();
+                System.Console.WriteLine("Livro último da pilha: " + books.Peek());
+                books.Pop();
             }
-            System.Console.WriteLine($"Há {queue.Count} Pessoas na fila");
+            System.Console.WriteLine($"Existem {books.Count} livros na pilha");
+
+            // Queue<string> queue = new Queue<string>();
+
+            // queue.Enqueue("Frank");
+            // queue.Enqueue("Dayse");
+            // queue.Enqueue("Dyen");
+
+
+            // System.Console.WriteLine($"Há {queue.Count} Pessoas na fila");
+            // while (queue.Count > 0)
+            // {
+            //     System.Console.WriteLine("Vez de " + queue.Peek());
+            //     queue.Dequeue();
+            // }
+            // System.Console.WriteLine($"Há {queue.Count} Pessoas na fila");
 
             // List<string> states = new List<string>() { "CE", "PB", "PE" };
             // string[] statesArray = new string[2] { "BA", "RN" };

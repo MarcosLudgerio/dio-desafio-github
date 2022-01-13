@@ -8,19 +8,38 @@ namespace Collections
         {
 
 
-            Stack<string> books = new Stack<string>();
+            Dictionary<string, string> states = new Dictionary<string, string>();
 
-            books.Push(".NET");
-            books.Push("Java");
-            books.Push("Python");
+            states.Add("CE", "Ceará");
+            states.Add("PB", "Paraíba");
+            states.Add("PI", "Piauí");
 
-            System.Console.WriteLine($"Existem {books.Count} livros na pilha");
-            while (books.Count > 0)
-            {
-                System.Console.WriteLine("Livro último da pilha: " + books.Peek());
-                books.Pop();
-            }
-            System.Console.WriteLine($"Existem {books.Count} livros na pilha");
+            // foreach (var item in states)
+            // {
+            //     System.Console.WriteLine($"{item.Key}: {item.Value}");
+            // }
+
+            string key = "PI";
+            System.Console.WriteLine(states[key]);
+
+            states[key] = "PIAUì";
+            System.Console.WriteLine(states[key]);
+
+            states.Remove(key);
+
+            // Stack<string> books = new Stack<string>();
+
+            // books.Push(".NET");
+            // books.Push("Java");
+            // books.Push("Python");
+
+            // System.Console.WriteLine($"Existem {books.Count} livros na pilha");
+            // while (books.Count > 0)
+            // {
+            //     System.Console.WriteLine("Livro último da pilha: " + books.Peek());
+            //     books.Pop();
+            // }
+            // System.Console.WriteLine($"Existem {books.Count} livros na pilha");
 
             // Queue<string> queue = new Queue<string>();
 

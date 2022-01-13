@@ -10,12 +10,22 @@ namespace Collections
 
             int[] numbers = op.GeneratedArrayLength10Random();
             op.ShowArray(numbers);
-            var numbersPars = from num in numbers where num % 2 != 0 orderby num select num;
 
-            var numbersParsMethodds = numbers.Where(x => x % 2 != 0).OrderBy(x => x).ToList();
 
-            System.Console.WriteLine("Números ímpares: " + string.Join(", ", numbersParsMethodds));
-            System.Console.WriteLine("Números ímpares: " + string.Join(", ", numbersPars));
+            var minimo = numbers.Min();
+            var maximo = numbers.Max();
+            var medium = numbers.Average();
+
+            System.Console.WriteLine("Mínimo: " + minimo);
+            System.Console.WriteLine("Máximo: " + maximo);
+            System.Console.WriteLine("Média: " + medium);
+
+            // var numbersPars = from num in numbers where num % 2 != 0 orderby num select num;
+
+            // var numbersParsMethodds = numbers.Where(x => x % 2 != 0).OrderBy(x => x).ToList();
+
+            // System.Console.WriteLine("Números ímpares: " + string.Join(", ", numbersParsMethodds));
+            // System.Console.WriteLine("Números ímpares: " + string.Join(", ", numbersPars));
 
             // Dictionary<string, string> states = new Dictionary<string, string>();
 

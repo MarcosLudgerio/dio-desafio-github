@@ -6,6 +6,24 @@ namespace Collections
     {
         public static void Main(string[] args)
         {
+            List<string> states = new List<string>() { "CE", "PB", "PE" };
+            string[] statesArray = new string[2] { "BA", "RN" };
+
+            // states.AddRange(statesArray);
+
+            states.Insert(1, "RN");
+
+
+            ListOperations opList = new ListOperations();
+
+            // opList.AddElement(states, "SP");
+
+            opList.ShowItemsList(states);
+
+            // System.Console.WriteLine("REMOVENDO O ELEMENTO SP");
+            // states.Remove("SP");
+
+            // opList.ShowItemsList(states);
 
 
             // int[] arrayInt = new int[3];

@@ -6,19 +6,35 @@ namespace Collections
     {
         public static void Main(string[] args)
         {
-            List<string> states = new List<string>() { "CE", "PB", "PE" };
-            string[] statesArray = new string[2] { "BA", "RN" };
 
-            // states.AddRange(statesArray);
+            Queue<string> queue = new Queue<string>();
 
-            states.Insert(1, "RN");
+            queue.Enqueue("Frank");
+            queue.Enqueue("Dayse");
+            queue.Enqueue("Dyen");
 
 
-            ListOperations opList = new ListOperations();
+            System.Console.WriteLine($"Há {queue.Count} Pessoas na fila");
+            while (queue.Count > 0)
+            {
+                System.Console.WriteLine("Vez de " + queue.Peek());
+                queue.Dequeue();
+            }
+            System.Console.WriteLine($"Há {queue.Count} Pessoas na fila");
 
-            // opList.AddElement(states, "SP");
+            // List<string> states = new List<string>() { "CE", "PB", "PE" };
+            // string[] statesArray = new string[2] { "BA", "RN" };
 
-            opList.ShowItemsList(states);
+            // // states.AddRange(statesArray);
+
+            // states.Insert(1, "RN");
+
+
+            // ListOperations opList = new ListOperations();
+
+            // // opList.AddElement(states, "SP");
+
+            // opList.ShowItemsList(states);
 
             // System.Console.WriteLine("REMOVENDO O ELEMENTO SP");
             // states.Remove("SP");

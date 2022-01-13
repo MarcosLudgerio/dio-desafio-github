@@ -15,10 +15,15 @@ namespace Collections
             var minimo = numbers.Min();
             var maximo = numbers.Max();
             var medium = numbers.Average();
+            var sum = numbers.Sum();
+            var numbersUnique = numbers.Distinct().ToArray();
 
             System.Console.WriteLine("Mínimo: " + minimo);
             System.Console.WriteLine("Máximo: " + maximo);
             System.Console.WriteLine("Média: " + medium);
+            System.Console.WriteLine("Soma: " + sum);
+            System.Console.WriteLine("Array original: " + string.Join(", ", numbers));
+            System.Console.WriteLine("Array sem repetição: " + string.Join(", ", numbersUnique));
 
             // var numbersPars = from num in numbers where num % 2 != 0 orderby num select num;
 

@@ -6,26 +6,33 @@ namespace Collections
     {
         public static void Main(string[] args)
         {
+            int[] numbers = new int[5] { 1, 4, 5, 3, 7 };
 
+            var numbersPars = from num in numbers where num % 2 != 0 orderby num select num;
 
-            Dictionary<string, string> states = new Dictionary<string, string>();
+            var numbersParsMethodds = numbers.Where(x => x % 2 != 0).OrderBy(x => x).ToList();
 
-            states.Add("CE", "Ceará");
-            states.Add("PB", "Paraíba");
-            states.Add("PI", "Piauí");
+            System.Console.WriteLine("Números ímpares: " + string.Join(", ", numbersParsMethodds));
+            System.Console.WriteLine("Números ímpares: " + string.Join(", ", numbersPars));
 
-            // foreach (var item in states)
-            // {
-            //     System.Console.WriteLine($"{item.Key}: {item.Value}");
-            // }
+            // Dictionary<string, string> states = new Dictionary<string, string>();
 
-            string key = "PI";
-            System.Console.WriteLine(states[key]);
+            // states.Add("CE", "Ceará");
+            // states.Add("PB", "Paraíba");
+            // states.Add("PI", "Piauí");
 
-            states[key] = "PIAUì";
-            System.Console.WriteLine(states[key]);
+            // // foreach (var item in states)
+            // // {
+            // //     System.Console.WriteLine($"{item.Key}: {item.Value}");
+            // // }
 
-            states.Remove(key);
+            // string key = "PI";
+            // System.Console.WriteLine(states[key]);
+
+            // states[key] = "PIAUì";
+            // System.Console.WriteLine(states[key]);
+
+            // states.Remove(key);
 
             // Stack<string> books = new Stack<string>();
 

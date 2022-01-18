@@ -7,45 +7,64 @@ namespace LocalizaFrota.Controllers
     public class VeichleController : ControllerBase
     {
         private readonly VeiclherRepository veiclherRepository;
-        public VeichleController(VeiclherRepository veiclherRepository)
-        {
-            this.veiclherRepository = veiclherRepository;
-        }
+        private readonly VeihcleDetran veihcleDetran;
 
+        public VeiculosController(IVeiculoRepository repository, IVeiculoDetran veiculoDetran)
+        {
+            this.repository = repository;
+            this.veiculoDetran = veiculoDetran;
+        }
+        // GET: api/<VeiculosController>
         [HttpGet]
-        public IActionResult Get() => Ok(veiclherRepository.getAll());
+        public IActionResult Get() => Ok(repository.GetAll());
 
-        [HttpGet("(id)")]
-        public IActionResult Get(Guild id)
+        // GET api/<VeiculosController>/5
+        [HttpGet("{id}")]
+        public IActionResult Get(Guid id)
         {
-            var veichle = veiclherRepository.GetById(id);
-            if (veichle == null) return NotFound();
-            return Ok(veichle);
+            var veiculo = repository.GetById(id);
+            if (veiculo == null)
+                return NotFound();
+            return Ok(veiculo);
         }
 
+        // POST api/<VeiculosController>
         [HttpPost]
-        public IActionResult Post([FromBody] Veihcle veihcle)
+        public IActionResult Post([FromBody] Veiculo veiculo)
         {
-            veiclherRepository.Add(id);
-            return CreatedAtAction(nanmeof(Get), new { id = veihcle.id }, veihcle);
-
+            repository.Add(veiculo);
+            return CreatedAtAction(nameof(Get), new { id = veiculo.Id }, veiculo);
         }
 
-        [HttpPut("(id)")]
-        public IActionResult Put(Guild id, [FromBody] Veihcle veihcle)
+        // PUT api/<VeiculosController>/5
+        [HttpPut("{id}")]
+        public IActionResult Put(Guid id, [FromBody] Veiculo veiculo)
         {
-            veiclherRepository.Update(veihcle);
+            repository.Update(veiculo);
+
             return NoContent();
-
         }
 
-        [HttpGet("(id)")]
-        public IActionResult Delete(Guild id)
+        // PUT api/<VeiculosController>/5
+        [HttpPut("{id}/vistoria")]
+        public IActionResult Put(Guid id)
         {
-            veiclherRepository.Delete(id);
-            return NoContent();
+            veiculoDetran.AgendarVistoriaDetran(id);
 
+            return NoContent();
         }
 
+        // DELETE api/<VeiculosController>/5
+        [HttpDelete("{id}")]
+        public IActionResult Delete(Guid id)
+        {
+            var veiculo = repository.GetById(id);
+            if (veiculo == null)
+                return NotFound();
+
+            repository.Delete(veiculo);
+
+            return NoContent();
+        }
     }
 }

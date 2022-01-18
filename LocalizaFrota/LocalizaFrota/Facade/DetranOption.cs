@@ -1,4 +1,4 @@
-
+s
 namespace Localiza.Frotas.Infra.Facade
 {
     public class DetranOptions

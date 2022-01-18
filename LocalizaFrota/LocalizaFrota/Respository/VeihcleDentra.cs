@@ -1,6 +1,6 @@
 namespace LocalizaFrota.Respository
 {
-    public class VeihcleDentra
+    public class VeihcleDentra : IDetranVeihcle
     {
         public Task scheduleReview(Guid veiculoId);
     }

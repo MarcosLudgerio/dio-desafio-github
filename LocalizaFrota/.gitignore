@@ -334,3 +334,4 @@ ASALocalRun/
 /RS.PaymentProvider.Tests/CoverageReport
 /RS.PaymentProvider.Tests/coverage.opencover.xml
 /RS.PaymentProvider.Tests/coverage.json
+.ionide

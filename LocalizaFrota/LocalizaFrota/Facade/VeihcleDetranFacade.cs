@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Localiza.Frotas.Infra.Facade
 {
-    public class VeiculoDetranFacade : IVeiculoDetran
+    public class VeihcleDetranFacade : IDetranVeihcle
     {
         private readonly DetranOptions detranOptions;
         private readonly IHttpClientFactory httpClientFactory;
@@ -27,7 +27,7 @@ namespace Localiza.Frotas.Infra.Facade
             var veiculo = veiculoRepository.GetById(veiculoId);
 
             var client = httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri(detranOptions.BaseUrl); 
+            client.BaseAddress = new Uri(detranOptions.BaseUrl);
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             var requestModel = new VistoriaModel()
             {

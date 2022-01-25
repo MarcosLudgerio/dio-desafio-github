@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "ExamplesConstructors/1.0.0": {
+      "CSharp/1.0.0": {
         "runtime": {
-          "ExamplesConstructors.dll": {}
+          "CSharp.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "ExamplesConstructors/1.0.0": {
+    "CSharp/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
